@@ -5,4 +5,5 @@ First Gridsome Project showing the most basic principles for Gridsome. [This pro
 [View Site](https://marvelous-pony-4c8530.netlify.app/blog)
 
 [Gridsome](https://gridsome.org/)
+
 [Gridsome Docs](https://gridsome.org/docs/)
