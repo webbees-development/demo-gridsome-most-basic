@@ -30,7 +30,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: calc(100% - 12rem);
-    padding: .5rem 6rem;
+    padding: 1rem 6rem;
     background: $darkblue;
     color: $white;
 

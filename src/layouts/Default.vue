@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <Header />
-    <slot/>
+    <main>
+      <slot/>
+    </main>
   </div>
 </template>
 
@@ -17,5 +19,18 @@ export default {
 
 
 <style>
+main {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-block: 3rem 5rem;
+}
 
+main > * + * {
+  margin-block-start: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
 </style>

@@ -1,9 +1,11 @@
 <template>
     <Layout>
-        <h1 v-html="$page.post.title" />
-        <h3>By {{ $page.post.author }} on {{ $page.post.date }}</h3>
-        <g-image :src="$page.post.thumbnail" style="width: 10rem" />
-        <div v-html="$page.post.content" />
+        <article>
+            <h1 v-html="$page.post.title" />
+            <h3>By {{ $page.post.author }} on {{ $page.post.date }}</h3>
+            <g-image :src="$page.post.thumbnail" style="width: 15rem" />
+            <div v-html="$page.post.content" />
+        </article>
     </Layout>
 </template>
 
@@ -20,3 +22,22 @@ query Post ($path: String!) {
     }
 }
 </page-query>
+
+<style scoped>
+article {
+    position: relative;
+}
+
+article > * + * {
+    margin-block-start: 1rem;
+}
+
+img {
+    position: absolute;
+
+    left: -17rem;
+    top: 0;
+
+    margin: 0;
+}
+</style>
